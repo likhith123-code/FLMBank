@@ -64,13 +64,13 @@ public class UserController {
 		return userService.withdrawAmount(user);
 	}
 	
-	// Withdraw the amount
+	// deposit the amount
 	@PutMapping("/deposit")
 	public ResponseEntity<?> depositAmount(@RequestBody DepositModel user) {
 		return userService.depositAmount(user);
 	}
 	
-	// Withdraw the amount
+	// Display the amount
 	@GetMapping("/getAmount")
 	public ResponseEntity<?> getAmount(long aadhaar) {
 		return userService.getBalance(aadhaar);
